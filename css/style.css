@@ -1,22 +1,30 @@
+:root {
+    --primary-color: rgb(188, 27, 69)
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
 
 .container {
-    background-color: rgb(188, 27, 69);
+    background-color: var(--primary-color);
     margin: 3.125rem auto;
     width: 70%;
     text-align: center;
     padding: 1.875rem;
 }
 
-.top-card {
+.top-card, .bottom-card {
     background-color: white;
-    width: 80%;
-    margin: 0 auto;
+    max-width: 80%;
+    margin: 0  auto 1rem auto;
     border-radius: 1.25rem;
     padding: 1.25rem;
 }
@@ -26,36 +34,42 @@ div.container h1 {
     color: white;
 }
 
-.fields {
-    display: flex;
-    justify-content: space-between;
-}
-
 .fields div {
     margin-left: 1.875rem;
     margin-right: 1.875rem;
 }
 
 div label {
-    color: rgb(188, 27, 69);
+    color: var(--primary-color);
     display: block;
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 
-div input {
+div input, div select {
     margin-bottom: 2rem;
     height: 1.5625rem;
-    border: 1px solid rgb(188, 27, 69);
-}
-
-div select {
-    margin-bottom: 2rem;
-    height: 1.5625rem;
-    border: 1px solid rgb(188, 27, 69);
+    border: 1px solid var(--primary-color);
 }
 
 div button {
-    color:  rgb(188, 27, 69);
+    color:  var(--primary-color);
     padding: .3125rem 1rem;
+}
+
+.bottom-card {
+    text-align: left;
+}
+
+.bottom-card .ticket-details div {
+    padding: 1.5625rem 0;
+}
+
+.bottom-card .ticket-details div h4 {
+    margin-bottom: 1.5625rem;
+}
+
+.bottom-card .ticket-details div:first-child {
+    width: 30%;
+    background-color: gray;
 }

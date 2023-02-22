@@ -5,25 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biglietto Treno</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS -->
+
 </head>
 
 <body>
-    <label for="passengerName">Nome e Cognome</label>
-    <input type="text" id="passengerName" value="">
+    <div class="container">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
 
-    <label for="kilomenters">Km da percorrere</label>
-    <input type="text" id="kilomenters" value="">
+        <div class="top-card">
+            <form action="" method="">
+                <div class="fields">
+                    <div>
+                        <label for="passengerName">Nome e Cognome</label>
+                        <input type="text" id="passengerName" value="">
+                    </div>
 
-    <label for="age">Fascia d'età:</label>
+                    <div>
+                        <label for="kilomenters">Km da percorrere</label>
+                        <input type="text" id="kilomenters" value="">
+                    </div>
 
-    <select name="age" id="age">
-        <option value="minorenne">Minorenne</option>
-        <option value="maggiorenne">Maggiorenne</option>
-        <option value="over65">Over 65</option>
-    </select>
+                    <div>
+                        <label for="age">Fascia d'età</label>
+                        <select name="age" id="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
+                    </div>
+                </div>
 
-    <button id="generate-btn">Genera</button>
+                <div>
+                    <button id="generate-btn">Genera</button>
+                    <button type="reset">Annulla</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
 
     <script src="main.js"></script>
 </body>

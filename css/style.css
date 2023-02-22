@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background-color: rgb(188, 27, 69);
+    margin: 3.125rem auto;
+    width: 70%;
+    text-align: center;
+    padding: 1.875rem;
+}
+
+.top-card {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+}
+
+div.container h1 {
+    margin-bottom: 1.25rem;
+    color: white;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fields div {
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+}
+
+div label {
+    color: rgb(188, 27, 69);
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+div input {
+    margin-bottom: 2rem;
+    height: 1.5625rem;
+    border: 1px solid rgb(188, 27, 69);
+}
+
+div select {
+    margin-bottom: 2rem;
+    height: 1.5625rem;
+    border: 1px solid rgb(188, 27, 69);
+}
+
+div button {
+    color:  rgb(188, 27, 69);
+    padding: .3125rem 1rem;
+}

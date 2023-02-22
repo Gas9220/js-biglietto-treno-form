@@ -18,7 +18,7 @@
         <h1>Calcola il prezzo del tuo biglietto</h1>
 
         <div class="top-card">
-            <form action="" method="">
+            <form action="/" method="get" onsubmit="return false">
                 <div class="fields flex-between">
                     <div>
                         <label for="passengerName">Nome e Cognome</label>
@@ -42,24 +42,24 @@
 
                 <div>
                     <button id="generate-btn">Genera</button>
-                    <button type="reset">Annulla</button>
+                    <button type="reset" id="cancel-btn">Annulla</button>
                 </div>
             </form>
         </div>
 
-        <h1>Il tuo biglietto</h1>
+        <h1 class="hidden" id="title">Il tuo biglietto</h1>
 
-        <div class="bottom-card">
+        <div id="bottom-card" class="bottom-card hidden">
             <h3>Dettaglio passeggeri</h3>
             <hr>
             <div class="ticket-details flex-between">
                 <div>
                     <h4>Nome Passegero</h4>
-                    <strong>Gaspare Monte</strong>
+                    <strong id="name">Gaspare Monte</strong>
                 </div>
                 <div>
                     <h4>Offerta</h4>
-                    <strong>Biglietto standard</strong>
+                    <strong id="ticketType">Biglietto standard</strong>
                 </div>
                 <div>
                     <h4>Carrozza</h4>
@@ -71,15 +71,12 @@
                 </div>
                 <div>
                     <h4>Costo Biglietto</h4>
-                    <strong>2.10€</strong>
+                    <strong id="price">2.10€</strong>
                 </div>
             </div>
             <hr>
         </div>
     </div>
-
-
-
 
     <script src="main.js"></script>
 </body>
